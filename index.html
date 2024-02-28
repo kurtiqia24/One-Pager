@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: rgb(255, 100, 75);
+}
+
+.header h1 {
+  font-size: 100px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 100, 75);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(255, 100, 75);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>SOCCER</h1>
+  <p></p>
+</div>
+
+<div class="topnav">
+  <a href="Walpole Soccer Photos.html">Walpole soccer</a>
+  <a href="Premier_Leauge.html">Premier League</a>
+  <a href="Trophies.html">Major Trophies</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>POSITIONS</h2>
+      <h5>Different Soccer Poistions, Nov 9, 2023</h5>
+      <img src="images/soccer_positions.jpeg" alt="positions">
+      <p>Understanding positions</p>
+      <p>Soccer has numerouse positions. It ranges from 3 sections of the field, offense, midfield, and defense. The defense is primarily made up of 3-5 players, most commonly 4 including a left back, right back and 2 centerbacks and of course a goalie. Midfield can be made up of left/right mids, and center(attacking/defending) mid. Fianally the attacking 3rd can be comprised of left/right wings, strikers or center forwards. 11 players are allowed to fill these positions at once on the field and it's up to the coach to decide that
+    </div>
+    <div class="card">
+      <h2>Best Player Of All Time</h2>
+      <h5>LIONEL MESSI</h5>
+      <img src="images/messi-celebration.jpg" atl="messi">
+      <p>June 24, 1987, Rosario, Argentina</p>
+      <p>Loinel Andres Messi is the best player in soccer history. He has played for top clubs while preforming at an unreal level. He was at his best during his FC Barcelona career. He scored 672 goals & delivered 266 assists in his 778 appearances tallying to 1.2 goal contributions per game. He was primarily a forward playing either right wing, striker, or an attacking midfielder.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="images/Goalkeeper.jpg" height="200" alt="Goalkeeper">
+      <p>I have been a Goalie for many years of my life, most recently my senior year of highschool at WHS. I have been playing soccer for 12 years of my life, ever since I was 5</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <img src="images/Messi world cup.jpg" height="200" alt="Messi World Cup">
+      <img src="images/Ronaldo.jpg" height="300" alt="Ronaldo Champions League">
+      <img src="images/Neymar.jpg" height="200" alt="Neymar">
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+
+
